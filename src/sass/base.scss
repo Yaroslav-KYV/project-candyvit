@@ -21,8 +21,16 @@ img {
   height: auto;
 }
 
+.container {
+  max-width: 1365px;
+  margin: 0 auto;
+}
+
 body {
   font-family: 'Signika', 'Arial', 'Tahoma', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000;
 
 }
 
