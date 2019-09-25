@@ -375,62 +375,47 @@ template {
   display: none;
 }
 
-.nav__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header {
-  background: #3b3a3a;
-}
-
-.title {
-  text-align: center;
-}
-
-.nav {
-  padding: 20px 0;
-}
-
-.nav__list {
-  max-width: 600px;
-  margin: 0 auto;
-  list-style: none;
-}
-
-.nav__item {
-  border: 2px solid transparent;
-}
-
-.nav__item:hover {
-  border: 2px solid orange;
-}
-
-.nav__link {
-  text-align: center;
-  font-size: 20px;
-  color: greenyellow;
-  line-height: 1.1;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-align: left;
-  transition: 1s ease-in-out;
-}
-
-.nav__link:hover {
-  color: orange;
-}
-
-* {
-  padding: 0;
-  margin: 0;
+html {
   box-sizing: border-box;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 body {
-  height: 100vh;
-  color: #2cd42c;
+  font-family: 'Signika', 'Arial', 'Tahoma', sans-serif;
+}
+
+/* signika-regular - latin */
+
+@font-face {
+  font-family: 'Signika';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Signika Regular"), local("Signika-Regular"), url("./fonts/signika-v10-latin-regular.woff2") format("woff2"), url("./fonts/signika-v10-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* signika-700 - latin */
+
+@font-face {
+  font-family: 'Signika';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Signika Bold"), local("Signika-Bold"), url("./fonts/signika-v10-latin-700.woff2") format("woff2"), url("./fonts/signika-v10-latin-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }

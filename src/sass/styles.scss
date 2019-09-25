@@ -1,20 +1,9 @@
 /*
    Import partials below
 */
+@import './helpers/variables';
+@import './helpers/mixins';
 @import './normalize';
-@import './variables';
-@import './mixins';
-@import './placeholder';
-@import './basic';
-@import './header';
+@import './base';
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  height: 100vh;
-  color: rgb(44, 212, 44);
-}
+// Components
