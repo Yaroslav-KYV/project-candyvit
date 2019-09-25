@@ -1,22 +1,32 @@
 font
 Signika bold, regular
 
+!!! rem, max-width
+
 Img
-header logo png
-header socials-icon svg prite
-header calc png
-section-title svg sprite
-key-benefits icon svg background-image
-whitepaper icon png
+
+header
+--------------------------------
+header logo png (img)
+header socials-icon svg prite (svg)
+right-block-acc png (bg-image)
+
+main
+------------------------------------
+section-title svg sprite (svg)
+key-benefits icon svg (bg-img)
+whitepaper icon png (img)
 
 header
 --------------------
 main-header  (header)
 main-nav (nav)
 site-logo
-page-navigation (ul)
-page-navigation__item*7 (li) последняя с page-navigation__item--button
-page-navigation__link (a)
+page-nav (ul)
+page-nav__item*7 (li) последняя с page-nav__item--button
+page-nav__link (a)
+
+main
 ----------------
 left-block (div)
   left-block__title (h2)
@@ -24,9 +34,15 @@ left-block (div)
   line-slider (div)
   left-block__socials (div ?)
 
-
-
 right-block (div)
+  right-block__title (h3)
+  right-block__info (p)
+  trigger (ul)
+  trigger__item (li)
+  right-block__conv (h4)
+  right-block__acc (p) + span::before-(bg-img)
+  right-bloc__button (button)
+
 -----------------
 
 
