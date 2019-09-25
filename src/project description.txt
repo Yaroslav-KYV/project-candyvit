@@ -1,0 +1,34 @@
+font
+Signika bold, regular
+
+Img
+header logo png
+header socials-icon svg prite
+header calc png
+section-title svg sprite
+key-benefits icon svg background-image
+whitepaper icon png
+
+header
+--------------------
+main-header  (header)
+main-nav (nav)
+site-logo
+page-navigation (ul)
+page-navigation__item*7 (li) последняя с page-navigation__item--button
+page-navigation__link (a)
+----------------
+left-block (div)
+  left-block__title (h2)
+  left-block__info (p)
+  line-slider (div)
+  left-block__socials (div ?)
+
+
+
+right-block (div)
+-----------------
+
+
+
+
