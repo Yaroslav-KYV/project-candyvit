@@ -1,0 +1,42 @@
+font
+Signika bold, regular
+
+Img
+header logo png
+header socials-icon svg prite
+header calc png
+section-title svg sprite
+key-benefits icon svg background-image
+whitepaper icon png
+
+header
+--------------------
+main-header  (header)
+nav (nav)
+logo
+nav__list(ul)
+nav__item*7 (li) последняя с nav__item--button
+nav__link (a)
+----------------
+left-block (div)
+  left-block__title (h2)
+  left-block__info (p)
+  line-slider (div)
+  left-block__socials (div ?)
+
+
+
+left-block (div)
+  left-block__title (h2)
+  left-block__info (p)
+  line-slider (div)
+  left-block__socials (div ?)
+
+right-block (div)
+  right-block__title (h3)
+  right-block__info (p)
+  trigger (ul)
+  trigger__item (li)
+  right-block__conv (h4)
+  right-block__acc (p) + span::before-(bg-img)
+  right-bloc__button (button)
