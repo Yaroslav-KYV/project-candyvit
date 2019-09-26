@@ -401,7 +401,7 @@ body {
 }
 
 .container {
-  width: 1175px;
+  width: 1365px;
   margin: 0 auto;
 }
 
@@ -432,10 +432,15 @@ body {
 .nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  max-width: 1175px;
+  margin: 0 auto;
 }
 
-.logo {
-  padding: 21px 0 12px 10px;
+.nav__link {
+  text-decoration: none;
+  color: #000000;
 }
 
 .nav__list {
@@ -445,12 +450,6 @@ body {
   width: 604px;
   list-style: none;
   font-weight: 700;
-  padding: 23px 0 26px 0;
-}
-
-.nav__link {
-  text-decoration: none;
-  color: #000000;
 }
 
 .nav__cont {
@@ -475,17 +474,27 @@ body {
 }
 
 .header-cont {
-  background: linear-gradient(to bottom left, #653892, #b4eae7), url("../img/team/background-min.png");
+  background: linear-gradient(to bottom left, #643993, #13a89f);
   background-repeat: no-repeat;
   background-size: cover;
   width: auto;
   background-position: center;
+  padding-bottom: 85px;
+}
+
+.blocks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 75px;
+  width: 1120px;
+  margin: 0 auto;
 }
 
 .left-block {
   display: flex;
   flex-direction: column;
-  width: 580px;
+  width: 560px;
 }
 
 .left-block__title {
@@ -518,10 +527,10 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  height: 80px;
-  padding: 0 20px;
+  height: 18px;
   background-color: transparent;
   overflow: hidden;
+  margin-bottom: 11px;
 }
 
 .scale {
@@ -532,5 +541,171 @@ body {
 
 .bar {
   height: 4px;
-  background-color: #f8eb58;
+  background-color: #ffe633;
+}
+
+.line-toggle-min {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #ffe633;
+}
+
+.line-toggle-max {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 139px;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #ffe633;
+}
+
+.seasons {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 60px;
+}
+
+.seasons__start {
+  padding-left: 34px;
+}
+
+.seasons__end {
+  padding-right: 118px;
+}
+
+.left-block__socials {
+  display: flex;
+  list-style: none;
+}
+
+.left-block__socials li:nth-child(-n+3) {
+  margin-right: 40px;
+}
+
+.left-block__socials svg {
+  width: 32px;
+  height: 32px;
+  fill: #ffe633;
+}
+
+.right-block {
+  display: flex;
+  width: 481px;
+  min-height: 544px;
+  background: linear-gradient(to right, #4b6f9a, #613c90);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 6px 14.72px 1.28px rgba(0, 0, 0, 0.2);
+}
+
+.title-position {
+  display: flex;
+  flex-direction: column;
+  padding-top: 58px;
+}
+
+.text-position {
+  margin-bottom: 50px;
+}
+
+.right-block__title {
+  font-size: 36px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.right-block__info {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+}
+
+.trigger {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin-bottom: 36px;
+}
+
+.trigger__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  width: 88px;
+  height: 88px;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.trigger__item--ocupation {
+  text-align: center;
+  color: #ffff;
+  font-size: 18px;
+  padding-top: 10px;
+}
+
+.right-block__conv {
+  text-align: center;
+  font-size: 30px;
+  color: #ffff;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.right-block__acc {
+  text-align: center;
+  font-size: 24px;
+  color: #ffff;
+  font-weight: normal;
+  margin-bottom: 35px;
+}
+
+.img-currency {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.img-currency:before {
+  display: inline-block;
+  margin-bottom: -15px;
+  width: 28px;
+  height: 46px;
+  content: '';
+  background-image: url("../images/layer.png");
+  margin-right: 5px;
+}
+
+.right-bloc__button {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 44px;
+  width: 235px;
+  height: 60px;
+  border: none;
+  border-radius: 30px;
+  background-color: #ffe633;
+  color: #000000;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
 }
