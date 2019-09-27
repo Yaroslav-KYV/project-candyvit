@@ -17,7 +17,7 @@
 }
 
 .line-slider__text {
-  @include flex ('arround');
+  @include flex ('between');
   color: $text-color;
   margin-bottom: 1.1875rem;
   font-size: $font-size;

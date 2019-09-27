@@ -396,10 +396,6 @@ img {
   height: auto;
 }
 
-body {
-  font-family: 'Signika', 'Arial', 'Tahoma', sans-serif;
-}
-
 .container {
   width: 1365px;
   margin: 0 auto;
@@ -512,7 +508,7 @@ body {
 
 .line-slider__text {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   color: #ffff;
   margin-bottom: 1.1875rem;
   font-size: 18px;
@@ -612,16 +608,6 @@ body {
   box-shadow: 0px 6px 14.72px 1.28px rgba(0, 0, 0, 0.2);
 }
 
-.title-position {
-  display: flex;
-  flex-direction: column;
-  padding-top: 3.625rem;
-}
-
-.text-position {
-  margin-bottom: 3.125rem;
-}
-
 .right-block__title {
   font-size: 2.25rem;
   color: #ffff;
@@ -635,6 +621,48 @@ body {
   color: #ffff;
   font-weight: 400;
   text-align: center;
+}
+
+.right-block__conv {
+  text-align: center;
+  font-size: 1.875rem;
+  color: #ffff;
+  font-weight: bold;
+  margin-bottom: 0.9375rem;
+}
+
+.right-block__acc {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #ffff;
+  font-weight: normal;
+  margin-bottom: 2.1875rem;
+}
+
+.right-block__button {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 2.75rem;
+  width: 14.6875rem;
+  height: 3.75rem;
+  border: none;
+  border-radius: 1.875rem;
+  background-color: #ffe633;
+  color: #000000;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.title-position {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3.625rem;
+}
+
+.text-position {
+  margin-bottom: 3.125rem;
 }
 
 .trigger {
@@ -662,22 +690,6 @@ body {
   padding-top: 0.625rem;
 }
 
-.right-block__conv {
-  text-align: center;
-  font-size: 1.875rem;
-  color: #ffff;
-  font-weight: bold;
-  margin-bottom: 0.9375rem;
-}
-
-.right-block__acc {
-  text-align: center;
-  font-size: 1.5rem;
-  color: #ffff;
-  font-weight: normal;
-  margin-bottom: 2.1875rem;
-}
-
 .img-currency {
   font-size: 1.5rem;
   text-transform: uppercase;
@@ -692,20 +704,4 @@ body {
   content: '';
   background-image: url("../images/layer.png");
   margin-right: 5px;
-}
-
-.right-bloc__button {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 2.75rem;
-  width: 14.6875rem;
-  height: 3.75rem;
-  border: none;
-  border-radius: 1.875rem;
-  background-color: #ffe633;
-  color: #000000;
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: bold;
-  cursor: pointer;
 }
