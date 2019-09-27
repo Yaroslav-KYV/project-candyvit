@@ -1,10 +1,13 @@
 /*
    Import partials below
 */
+@import './normalize';
 @import './helpers/variables';
 @import './helpers/mixins';
-@import './normalize';
+@import './helpers/placeholder';
 @import './base';
 // Components
-@import './components/main';
-@import './components/header';
+@import './components/about-us';
+@import './components/problem-solutins';
+@import './components/key-benefits';
+@import './components/whitepaper';

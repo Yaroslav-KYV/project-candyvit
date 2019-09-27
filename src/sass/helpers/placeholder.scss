@@ -1,13 +1,15 @@
-%flex-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+%img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
-%flex-column {
-  display: flex;
-  flex-wrap: column wrap;
-  justify-content: center;
-  align-items: center;
+%container {
+  max-width: 1365px;
+  margin: 0 auto;
+}
+
+%global {
+  margin: 0;
+  padding: 0;
 }

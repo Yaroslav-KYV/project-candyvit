@@ -1,7 +1,12 @@
 font
 Signika bold, regular
 
-!!! rem, max-width
+!!! variables list  list-style none
+    variables link  text-decoration none
+    mixin background no-repeat center cover
+
+
+
 
 Img
 
