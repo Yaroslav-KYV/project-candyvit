@@ -16,10 +16,14 @@ img {
   @extend %img;
 }
 
+body {
+  font-family: $main-font;
+  font-size: $font-size;
+}
+
 .container {
   @extend %container;
 }
-
 /* signika-regular - latin */
 
 @font-face {
@@ -40,4 +44,15 @@ img {
   src: local('Signika Bold'), local('Signika-Bold'),
        url('../fonts/signika-v10-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('../fonts/signika-v10-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+// Ebrima
+
+@font-face {
+  font-family: "Ebrima";
+
+  src: url("../fonts/ebrima.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/ebrima.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
 }

@@ -1,0 +1,44 @@
+.main-header {
+  background-color: $text-color;
+}
+
+.nav {
+ @include flex('all');
+  padding: 1.25rem 0;
+  max-width: 73.4375rem;
+  margin: 0 auto;
+
+  &__link {
+    text-decoration: none;
+    color: $second-color;
+  }
+
+  &__link:hover {
+    color: $button-color;
+  }
+
+  &__list {
+    @include flex('all');
+    width: 37.75rem;
+    list-style: none;
+    font-weight: 700;
+  }
+
+  &__cont {
+    @include flex('all');
+    width: 47.8125rem;
+  }
+
+  &__item--button {
+    display: block;
+    margin: 0;
+    border: none;
+    border-radius: 0.9375rem;
+    font-weight: 700;
+    width: 6.25rem;
+    height: 1.75rem;
+    color: $text-color;
+    background-color: $button-color;
+    cursor: pointer;
+  }
+}

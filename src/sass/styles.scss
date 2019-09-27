@@ -7,6 +7,10 @@
 @import './helpers/placeholder';
 @import './base';
 // Components
+@import './components/main-header';
+@import './components/header-container';
+@import './components/left-block';
+@import './components/right-block';
 @import './components/about-us';
 @import './components/problem-solutins';
 @import './components/key-benefits';
