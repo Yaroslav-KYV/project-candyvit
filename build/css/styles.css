@@ -433,8 +433,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
-  max-width: 1175px;
+  padding: 1.25rem 0;
+  max-width: 73.4375rem;
   margin: 0 auto;
 }
 
@@ -447,7 +447,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 604px;
+  width: 37.75rem;
   list-style: none;
   font-weight: 700;
 }
@@ -456,17 +456,17 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 765px;
+  width: 47.8125rem;
 }
 
 .nav__item--button {
   display: block;
   margin: 0;
   border: none;
-  border-radius: 15px;
+  border-radius: 0.9375rem;
   font-weight: 700;
-  width: 100px;
-  height: 28px;
+  width: 6.25rem;
+  height: 1.75rem;
   color: #ffff;
   background-color: #13a89e;
   text-align: center;
@@ -477,44 +477,44 @@ body {
   background: linear-gradient(to bottom left, #643993, #13a89f);
   background-repeat: no-repeat;
   background-size: cover;
-  width: auto;
   background-position: center;
-  padding-bottom: 85px;
+  width: auto;
+  padding-bottom: 5.3125rem;
 }
 
 .blocks {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding-top: 75px;
-  width: 1120px;
+  align-items: center;
+  padding-top: 4.6875rem;
+  width: 70rem;
   margin: 0 auto;
 }
 
 .left-block {
   display: flex;
   flex-direction: column;
-  width: 560px;
+  width: 35rem;
 }
 
 .left-block__title {
-  font-size: 60px;
+  font-size: 3.75rem;
   color: #ffff;
-  margin-bottom: 38px;
+  margin-bottom: 2.375rem;
 }
 
 .left-block__info {
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 400;
   color: #ffff;
-  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
 }
 
 .line-slider__text {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   color: #ffff;
-  margin-bottom: 19px;
+  margin-bottom: 1.1875rem;
   font-size: 18px;
   font-weight: normal;
 }
@@ -527,20 +527,20 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  height: 18px;
+  height: 1.125rem;
   background-color: transparent;
   overflow: hidden;
-  margin-bottom: 11px;
+  margin-bottom: 0.6875rem;
 }
 
 .scale {
   flex: 0 0 100%;
-  height: 4px;
+  height: 0.25rem;
   background-color: #acacac;
 }
 
 .bar {
-  height: 4px;
+  height: 0.25rem;
   background-color: #ffe633;
 }
 
@@ -548,10 +548,10 @@ body {
   display: inline-block;
   position: absolute;
   top: 50%;
-  left: 50px;
+  left: 3.125rem;
   transform: translateY(-50%);
-  width: 18px;
-  height: 18px;
+  width: 1.125rem;
+  height: 1.125rem;
   border-radius: 50%;
   cursor: pointer;
   background-color: #ffe633;
@@ -561,10 +561,10 @@ body {
   display: inline-block;
   position: absolute;
   top: 50%;
-  right: 139px;
+  right: 8.6875rem;
   transform: translateY(-50%);
-  width: 18px;
-  height: 18px;
+  width: 1.125rem;
+  height: 1.125rem;
   border-radius: 50%;
   cursor: pointer;
   background-color: #ffe633;
@@ -574,16 +574,16 @@ body {
   display: flex;
   justify-content: space-between;
   font-size: 18px;
-  color: #fff;
-  margin-bottom: 60px;
+  color: #ffff;
+  margin-bottom: 3.75rem;
 }
 
 .seasons__start {
-  padding-left: 34px;
+  padding-left: 2.125rem;
 }
 
 .seasons__end {
-  padding-right: 118px;
+  padding-right: 7.375rem;
 }
 
 .left-block__socials {
@@ -592,19 +592,19 @@ body {
 }
 
 .left-block__socials li:nth-child(-n+3) {
-  margin-right: 40px;
+  margin-right: 2.5rem;
 }
 
 .left-block__socials svg {
-  width: 32px;
-  height: 32px;
+  width: 2rem;
+  height: 2rem;
   fill: #ffe633;
 }
 
 .right-block {
   display: flex;
-  width: 481px;
-  min-height: 544px;
+  width: 30.0625rem;
+  min-height: 34rem;
   background: linear-gradient(to right, #4b6f9a, #613c90);
   background-repeat: no-repeat;
   background-size: cover;
@@ -615,24 +615,24 @@ body {
 .title-position {
   display: flex;
   flex-direction: column;
-  padding-top: 58px;
+  padding-top: 3.625rem;
 }
 
 .text-position {
-  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
 }
 
 .right-block__title {
-  font-size: 36px;
-  color: #fff;
+  font-size: 2.25rem;
+  color: #ffff;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 36px;
+  margin-bottom: 2.25rem;
 }
 
 .right-block__info {
-  font-size: 24px;
-  color: #fff;
+  font-size: 1.5rem;
+  color: #ffff;
   font-weight: 400;
   text-align: center;
 }
@@ -641,17 +641,17 @@ body {
   display: flex;
   justify-content: space-around;
   list-style: none;
-  margin-bottom: 36px;
+  margin-bottom: 2.25rem;
 }
 
 .trigger__item {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fff;
-  width: 88px;
-  height: 88px;
-  font-size: 36px;
+  background-color: #ffff;
+  width: 5.5rem;
+  height: 5.5rem;
+  font-size: 2.25rem;
   font-weight: bold;
 }
 
@@ -659,36 +659,36 @@ body {
   text-align: center;
   color: #ffff;
   font-size: 18px;
-  padding-top: 10px;
+  padding-top: 0.625rem;
 }
 
 .right-block__conv {
   text-align: center;
-  font-size: 30px;
+  font-size: 1.875rem;
   color: #ffff;
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-bottom: 0.9375rem;
 }
 
 .right-block__acc {
   text-align: center;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #ffff;
   font-weight: normal;
-  margin-bottom: 35px;
+  margin-bottom: 2.1875rem;
 }
 
 .img-currency {
-  font-size: 24px;
+  font-size: 1.5rem;
   text-transform: uppercase;
-  color: #fff;
+  color: #ffff;
 }
 
 .img-currency:before {
   display: inline-block;
-  margin-bottom: -15px;
-  width: 28px;
-  height: 46px;
+  margin-bottom: -0.9375rem;
+  width: 1.75rem;
+  height: 2.875rem;
   content: '';
   background-image: url("../images/layer.png");
   margin-right: 5px;
@@ -697,15 +697,15 @@ body {
 .right-bloc__button {
   display: block;
   margin: 0 auto;
-  margin-bottom: 44px;
-  width: 235px;
-  height: 60px;
+  margin-bottom: 2.75rem;
+  width: 14.6875rem;
+  height: 3.75rem;
   border: none;
-  border-radius: 30px;
+  border-radius: 1.875rem;
   background-color: #ffe633;
   color: #000000;
   text-align: center;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   cursor: pointer;
 }

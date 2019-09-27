@@ -1,0 +1,102 @@
+.right-block {
+  display: flex;
+  width: 30.0625rem;
+  min-height: 34rem;
+  background: linear-gradient(to right, #4b6f9a, #613c90);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 6px 14.72px 1.28px rgba(0, 0, 0, 0.2);
+}
+
+.title-position {
+  @include column;
+  padding-top: 3.625rem;
+}
+
+.text-position {
+  margin-bottom: 3.125rem;
+}
+
+.right-block__title {
+  font-size:2.25rem;
+  color: $text-color;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2.25rem;
+}
+
+.right-block__info {
+  font-size: 1.5rem;
+  color: $text-color;
+  font-weight: 400;
+  text-align: center;
+}
+
+.trigger {
+  @include flex ('arround');
+  list-style: none;
+  margin-bottom: 2.25rem;
+  &__item {
+    @include center ;
+    background-color: $text-color;
+    width: 5.5rem;
+    height: 5.5rem;
+    font-size: 2.25rem;
+    font-weight: bold;
+  }
+  &__item--ocupation {
+    text-align: center;
+    color: $text-color;
+    font-size:$font-size;
+    padding-top: 0.625rem;
+  }
+
+}
+
+.right-block__conv {
+  text-align: center;
+  font-size: 1.875rem;
+  color: $text-color;
+  font-weight: bold;
+  margin-bottom: 0.9375rem;
+}
+
+.right-block__acc {
+  text-align: center;
+  font-size: 1.5rem;
+  color: $text-color;
+  font-weight: normal;
+  margin-bottom: 2.1875rem;
+}
+
+.img-currency {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: $text-color;
+  &:before {
+    display: inline-block;
+    margin-bottom: -0.9375rem;
+    width: 1.75rem;
+    height: 2.875rem;
+    content: '';
+    background-image: url('../images/layer.png');
+    margin-right: 5px;
+  }
+}
+
+.right-bloc__button {
+  display: block;
+  margin: 0 auto;
+  margin-bottom:2.75rem;
+  width: 14.6875rem;
+  height: 3.75rem;
+  border: none;
+  border-radius: 1.875rem;
+  background-color: $main-color;
+  color: $second-color;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}

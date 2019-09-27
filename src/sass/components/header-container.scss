@@ -1,0 +1,16 @@
+.header-cont {
+  background: linear-gradient(to bottom left, rgb(100, 57, 147), rgb(19, 168, 159));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: auto;
+  padding-bottom: 5.3125rem;
+
+}
+
+.blocks {
+  @include flex('all') ;
+  padding-top: 4.6875rem;
+  width: 70rem;
+  margin: 0 auto;
+}
