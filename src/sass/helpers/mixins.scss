@@ -9,6 +9,7 @@
 //   font-size:$size;
 // font-size: ($size / 16px) * 1rem;
 // }
+
 @mixin flex($type: 'all') {
   display: flex;
 

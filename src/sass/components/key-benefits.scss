@@ -108,6 +108,32 @@
   }
 }
 
+// ========================MOBILE MEDIA============================
+
+@media(max-width: 767px) {
+  .container {
+    max-width: 20rem;
+  }
+
+.key-benefits {
+
+  &__block:not(:nth-child(n+4)) {
+    margin-bottom: 4rem;
+  }
+
+  &__block {
+    margin: 0 auto;
+  }
+
+  &__item--papers,
+  &__item--chart {
+    padding-right: 0px;
+  }
+}
+}
+
+
+
 
 
 

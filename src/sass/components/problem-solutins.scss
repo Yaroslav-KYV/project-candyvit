@@ -41,13 +41,14 @@
     left: 0;
     transform: translateY(-50%);
     color: #ffe633;
+    text-align: left;
   }
 }
+
 .solution {
   z-index: 10;
   position: absolute;
   padding: 4.25rem 6.25rem 0 5.25rem;
-  ;
   top: 50%;
   right: -66%;
   transform: translateY(-50%);
@@ -71,6 +72,7 @@
   }
 
   &__button {
+    display: block;
     border: none;
     background-color: #ffe633;
     color: #fff;
@@ -79,5 +81,94 @@
     ;
     padding: 0.625rem 1.875rem;
     cursor: pointer;
+  }
+}
+
+// ============================TABLET MEDIA==================================
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    max-width: 48rem;
+  }
+
+  .problem-solutions {
+    padding-bottom: 28rem;
+  }
+
+  .problem {
+    left: 0;
+    margin: 0 auto;
+  }
+
+  .solution {
+    top: 50%;
+    right: 30px;
+    transform: translateY(50%);
+
+
+    &__button {
+      margin: 0 auto;
+    }
+  }
+}
+
+
+// ========================MOBILE MEDIA============================
+
+@media(max-width: 767px) {
+  .container {
+    max-width: 20rem;
+  }
+
+  .problem-solutions {
+    padding-bottom: 25rem;
+  }
+
+  .problem {
+    left: 0;
+    margin: 0 auto;
+    padding: 0.625rem 0 0 0;
+    text-align: center;
+
+  &__title {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  &__item {
+    padding-left: 0rem;
+  }
+
+  &__item::before {
+    content: '●';
+    position: absolute;
+    top: -1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffe633;
+    text-align: left;
+  }
+}
+
+  .solution {
+    margin: 0 auto;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(50%);
+    max-width: 90%;
+    height: auto;
+    padding: 10px 5px 10px 5px;
+
+    &__title {
+      margin-bottom: 32px;
+    }
+
+    &__description {
+      font-size: 1.25rem;
+    }
+
+    &__button {
+      margin: 0 auto;
+    }
   }
 }

@@ -45,6 +45,34 @@
   }
 }
 
+// ========================MOBILE MEDIA============================
 
+@media(max-width: 767px) {
+  .container {
+    max-width: 20rem;
+  }
 
+  .whitepaper {
+    padding-bottom: 3.75rem;
 
+  &__list {
+    display: flex;
+    flex-wrap: no-wrap;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item:not(:nth-child(3n)) {
+    margin-right: 0px;
+  }
+
+  &__item:not(:nth-child(n+6)) {
+    margin-bottom: 3.75rem;
+  }
+}
+}
