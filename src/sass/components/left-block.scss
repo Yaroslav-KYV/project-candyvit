@@ -1,6 +1,6 @@
 .left-block {
   @include column;
-  width: 35rem;
+  max-width: 35rem;
 
   &__title {
     font-size: 3.75rem;
