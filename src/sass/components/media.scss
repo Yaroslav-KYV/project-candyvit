@@ -55,11 +55,13 @@
     margin: 0 auto;
     max-width: 20rem;
   }
+
+  .range-control {
+    padding: 0 15px 0 15px;
+  }
 }
 
-.range-control {
-  padding: 0 15px 0 15px;
-}
+
 
 // PC Responsive
 // @media (max-width:1199px) {

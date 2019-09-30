@@ -440,15 +440,14 @@ body {
   font-style: normal;
 }
 
-.range-control {
-  padding: 0 15px 0 15px;
-}
-
 .main-header {
   background-color: #ffff;
 }
 
 .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 1.25rem 0;
   max-width: 73.4375rem;
   margin: 0 auto;
@@ -1106,6 +1105,10 @@ body {
   .right-block {
     margin: 0 auto;
     max-width: 20rem;
+  }
+
+  .range-control {
+    padding: 0 15px 0 15px;
   }
 
   .container {
