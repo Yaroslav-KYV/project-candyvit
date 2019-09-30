@@ -1,16 +1,19 @@
-// Mobile-Tablet Responsive
+//Mobile Responsive
 @media(max-width:767px) {
   .nav {
-    min-width: 20rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 20rem;
 
     &__list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
+      flex-direction: column;
+      width: 20rem;
     }
 
     &__item {
       font-size: 14px;
+      margin-bottom: 5px;
+
     }
 
     &__cont {
@@ -20,12 +23,12 @@
   }
 
   .logo {
-    @include flex ('hor');
     margin-bottom: 10px;
   }
 
   .blocks {
     @include column;
+
   }
 
   .left-block {
@@ -51,6 +54,10 @@
     }
   }
 
+  .line-toggle-max {
+    right: 4.6875rem;
+  }
+
   .right-block {
     margin: 0 auto;
     max-width: 20rem;
@@ -59,28 +66,40 @@
   .range-control {
     padding: 0 15px 0 15px;
   }
+
+  .trigger__item {
+    width: 4.5rem;
+    height: 4.5rem;
+
+  }
 }
 
+// Tablet-Responsive
+@media(max-width:1199px) {
 
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+  }
 
-// PC Responsive
-// @media (max-width:1199px) {
-//   .blocks {
-//     @include flex('all');
-//     padding-top: 4.6875rem;
-//     max-width: 70rem;
-//     margin: 0 auto;
-//   }
+  .logo {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+  }
 
-//   .nav {
-//     @include flex('all');
-//     padding: 1.25rem 0;
-//     max-width: 73.4375rem;
-//     margin: 0 auto;
+  .blocks {
+    @include column;
+  }
 
-//     &__cont {
-//       @include flex('all');
-//       max-width: 47.8125rem;
-//     }
-//   }
-// }
+  .left-block {
+    margin-bottom: 40px;
+  }
+
+  .left-block__socials {
+    justify-content: center;
+}
+}
+

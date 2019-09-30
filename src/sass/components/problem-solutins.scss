@@ -1,5 +1,5 @@
 .problem-solutions {
-  padding-bottom: 13.5rem;
+  padding: 0 0 13.5rem 0;
 }
 
 .problem {
@@ -86,13 +86,13 @@
 
 // ============================TABLET MEDIA==================================
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media(max-width: 1299px) {
   .container {
     max-width: 48rem;
   }
 
   .problem-solutions {
-    padding-bottom: 28rem;
+    padding: 12rem 0 28rem 0;
   }
 
   .problem {
@@ -121,7 +121,7 @@
   }
 
   .problem-solutions {
-    padding-bottom: 25rem;
+    padding-bottom: 0;
   }
 
   .problem {

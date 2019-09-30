@@ -74,7 +74,7 @@
   }
 }
 
-@media(max-width: 1199px) {
+@media(max-width: 1299px) {
   .container {
     max-width: 48rem;
   }
@@ -100,6 +100,10 @@
 }
 
 @media(max-width: 767px) {
+
+  .about-us {
+    padding: 5.625rem 0 0 0;
+  }
 
   .container {
     max-width: 20rem;
