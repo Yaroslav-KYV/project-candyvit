@@ -3,6 +3,9 @@
 }
 
 .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 1.25rem 0;
   max-width: 73.4375rem;
   margin: 0 auto;
@@ -35,4 +38,13 @@
     background-color: $button-color;
     cursor: pointer;
   }
+
+}
+.blocks {
+  max-width: 70.3125rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 73px;
 }

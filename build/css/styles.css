@@ -440,15 +440,14 @@ body {
   font-style: normal;
 }
 
-.range-control {
-  padding: 0 15px 0 15px;
-}
-
 .main-header {
   background-color: #ffff;
 }
 
 .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 1.25rem 0;
   max-width: 73.4375rem;
   margin: 0 auto;
@@ -483,6 +482,15 @@ body {
   color: #ffff;
   background-color: #13a89e;
   cursor: pointer;
+}
+
+.blocks {
+  max-width: 70.3125rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 73px;
 }
 
 .header-cont {
@@ -605,9 +613,8 @@ body {
 }
 
 .right-block {
-  display: flex;
-  max-width: 30.0625rem;
-  min-height: 34rem;
+  width: 30.0625rem;
+  min-height: auto;
   background: linear-gradient(to right, #4b6f9a, #613c90);
   background-repeat: no-repeat;
   background-size: cover;
@@ -621,6 +628,7 @@ body {
   font-weight: bold;
   text-align: center;
   margin-bottom: 2.25rem;
+  padding-top: 58px;
 }
 
 .right-block__info {
@@ -660,12 +668,6 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
   cursor: pointer;
-}
-
-.title-position {
-  display: flex;
-  flex-direction: column;
-  padding-top: 3.625rem;
 }
 
 .text-position {
@@ -1028,6 +1030,32 @@ body {
 }
 
 @media (max-width: 1199px) {
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blocks {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-block {
+    margin-bottom: 40px;
+  }
+
+  .left-block__socials {
+    justify-content: center;
+  }
+
   .container {
     max-width: 48rem;
   }
@@ -1051,17 +1079,19 @@ body {
 
 @media (max-width: 767px) {
   .nav {
-    min-width: 20rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 20rem;
   }
 
   .nav__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column;
+    width: 20rem;
   }
 
   .nav__item {
     font-size: 14px;
+    margin-bottom: 5px;
   }
 
   .nav__cont {
@@ -1070,8 +1100,6 @@ body {
   }
 
   .logo {
-    display: flex;
-    justify-content: center;
     margin-bottom: 10px;
   }
 
@@ -1103,9 +1131,22 @@ body {
     font-size: 35px;
   }
 
+  .line-toggle-max {
+    right: 4.6875rem;
+  }
+
   .right-block {
     margin: 0 auto;
     max-width: 20rem;
+  }
+
+  .range-control {
+    padding: 0 15px 0 15px;
+  }
+
+  .trigger__item {
+    width: 4.5rem;
+    height: 4.5rem;
   }
 
   .container {
