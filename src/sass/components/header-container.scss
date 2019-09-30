@@ -3,14 +3,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: auto;
+  width: 100%;
+  min-width: 600px;
   padding-bottom: 5.3125rem;
-
-}
-
-.blocks {
-  @include flex('all') ;
-  padding-top: 4.6875rem;
-  width: 70rem;
-  margin: 0 auto;
 }

@@ -3,7 +3,6 @@
 }
 
 .nav {
- @include flex('all');
   padding: 1.25rem 0;
   max-width: 73.4375rem;
   margin: 0 auto;
@@ -22,11 +21,6 @@
     width: 37.75rem;
     list-style: none;
     font-weight: 700;
-  }
-
-  &__cont {
-    @include flex('all');
-    width: 47.8125rem;
   }
 
   &__item--button {
