@@ -7,9 +7,9 @@
 @import './helpers/placeholder';
 @import './base';
 // Components
+@import './components/media';
 @import './components/main-header';
 @import './components/header-container';
-@import './components/media';
 @import './components/left-block';
 @import './components/right-block';
 @import './components/about-us';
@@ -17,5 +17,5 @@
 @import './components/key-benefits';
 @import './components/whitepaper';
 
-// max-width: 1023px - tablet
+// max-width: 1199px - tablet
 // max-width: 767px - mobileS

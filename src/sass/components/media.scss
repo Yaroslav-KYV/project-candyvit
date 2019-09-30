@@ -1,10 +1,9 @@
 // Mobile-Tablet Responsive
-@media (max-width:1023px) {
+@media(max-width:767px) {
   .nav {
-    min-width: 600px;
+    min-width: 20rem;
 
     &__list {
-      width: 580px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
@@ -31,9 +30,9 @@
 
   .left-block {
     margin: 0 auto;
-    min-width: 580px;
+    max-width: 20rem;
     padding-top: 4.6875rem;
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
 
     &__title {
       text-align: center;
@@ -54,6 +53,7 @@
 
   .right-block {
     margin: 0 auto;
+    max-width: 20rem;
   }
 }
 
@@ -62,23 +62,23 @@
 }
 
 // PC Responsive
-@media (min-width:1024px) {
-  .blocks {
-    @include flex('all');
-    padding-top: 4.6875rem;
-    max-width: 70rem;
-    margin: 0 auto;
-  }
+// @media (max-width:1199px) {
+//   .blocks {
+//     @include flex('all');
+//     padding-top: 4.6875rem;
+//     max-width: 70rem;
+//     margin: 0 auto;
+//   }
 
-  .nav {
-    @include flex('all');
-    padding: 1.25rem 0;
-    max-width: 73.4375rem;
-    margin: 0 auto;
+//   .nav {
+//     @include flex('all');
+//     padding: 1.25rem 0;
+//     max-width: 73.4375rem;
+//     margin: 0 auto;
 
-    &__cont {
-      @include flex('all');
-      max-width: 47.8125rem;
-    }
-  }
-}
+//     &__cont {
+//       @include flex('all');
+//       max-width: 47.8125rem;
+//     }
+//   }
+// }

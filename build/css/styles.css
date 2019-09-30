@@ -440,14 +440,15 @@ body {
   font-style: normal;
 }
 
+.range-control {
+  padding: 0 15px 0 15px;
+}
+
 .main-header {
   background-color: #ffff;
 }
 
 .nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 1.25rem 0;
   max-width: 73.4375rem;
   margin: 0 auto;
@@ -471,13 +472,6 @@ body {
   font-weight: 700;
 }
 
-.nav__cont {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 47.8125rem;
-}
-
 .nav__item--button {
   display: block;
   margin: 0;
@@ -496,23 +490,14 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: auto;
+  max-width: 100%;
   padding-bottom: 5.3125rem;
-}
-
-.blocks {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 4.6875rem;
-  width: 70rem;
-  margin: 0 auto;
 }
 
 .left-block {
   display: flex;
   flex-direction: column;
-  width: 35rem;
+  max-width: 35rem;
 }
 
 .left-block__title {
@@ -621,7 +606,7 @@ body {
 
 .right-block {
   display: flex;
-  width: 30.0625rem;
+  max-width: 30.0625rem;
   min-height: 34rem;
   background: linear-gradient(to right, #4b6f9a, #613c90);
   background-repeat: no-repeat;
@@ -1065,6 +1050,64 @@ body {
 }
 
 @media (max-width: 767px) {
+  .nav {
+    min-width: 20rem;
+  }
+
+  .nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .nav__item {
+    font-size: 14px;
+  }
+
+  .nav__cont {
+    display: flex;
+    justify-content: center;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .blocks {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-block {
+    margin: 0 auto;
+    max-width: 20rem;
+    padding-top: 4.6875rem;
+    margin-bottom: 3.125rem;
+  }
+
+  .left-block__title {
+    text-align: center;
+  }
+
+  .left-block__info {
+    text-align: center;
+  }
+
+  .left-block__socials {
+    justify-content: center;
+  }
+
+  .left-block__title {
+    font-size: 35px;
+  }
+
+  .right-block {
+    margin: 0 auto;
+    max-width: 20rem;
+  }
+
   .container {
     max-width: 20rem;
   }
