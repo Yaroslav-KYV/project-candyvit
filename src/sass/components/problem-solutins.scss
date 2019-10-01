@@ -91,12 +91,13 @@
 // ============================TABLET MEDIA==================================
 
 @media(max-width: 1299px) {
+
   .container {
     max-width: 48rem;
   }
 
   .problem-solutions {
-    padding: 0 0 28rem 0;
+    padding: 70px 0 28rem 0;
   }
 
   .problem {
@@ -125,7 +126,7 @@
   }
 
   .problem-solutions {
-    padding-bottom: 0;
+    padding: 7rem 0;
   }
 
   .problem {

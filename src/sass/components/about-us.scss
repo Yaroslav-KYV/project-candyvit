@@ -67,7 +67,7 @@
     transform: translateX(-50%);
     display: block;
     background: url(../images/bgsvg/play.svg) center no-repeat;
-    min-width: 16.25rem;
+    width: 16.25rem;
     height: 16.25rem;
     border-radius: 50%;
     content: '';
@@ -82,8 +82,13 @@
 }
 
 @media(max-width: 1299px) {
+
   .container {
     max-width: 48rem;
+  }
+
+  .about-us {
+    padding: 5.625rem 0 9.5rem 0;
   }
 
   .section__title {
@@ -97,13 +102,10 @@
     }
   }
 
-
-
   .img-wrapper {
     margin: 0 auto;
     left: 0;
   }
-
 }
 
 @media(max-width: 767px) {

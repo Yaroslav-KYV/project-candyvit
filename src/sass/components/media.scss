@@ -18,7 +18,9 @@
 
     &__cont {
       display: flex;
+      flex-direction: column;
       justify-content: center;
+      align-items: center;
     }
   }
 
@@ -55,7 +57,7 @@
   }
 
   .line-toggle-max {
-    right: 4.6875rem;
+    left: 11.6875rem;
   }
 
   .right-block {
@@ -68,8 +70,8 @@
   }
 
   .trigger__item {
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 4rem;
+    height: 4rem;
     color: $main-color;
 
   }
@@ -97,6 +99,7 @@
 
   .left-block {
     margin-bottom: 2.5rem;
+    padding: 0 0.3125rem;
   }
 
   .left-block__socials {

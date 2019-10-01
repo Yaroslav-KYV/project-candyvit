@@ -55,90 +55,93 @@
       margin-bottom: 0;
     }
 
-  &--papers,
-  &--chart {
-    padding-right: 3.75rem;
+    &--papers,
+    &--chart {
+      padding-right: 3.75rem;
+    }
+
+    &::before {
+      position: absolute;
+      display: inline-block;
+      top: 0;
+      left: 0;
+      content: '';
+      width: 2rem;
+      height: 2rem;
+    }
+
+    &--target::before {
+      background-image: url('../images/bgsvg/target.svg');
+    }
+
+    &--balance::before {
+      background-image: url('../images/bgsvg/balance.svg');
+    }
+
+    &--wallet::before {
+      background-image: url('../images/bgsvg/wallet.svg');
+    }
+
+    &--avatar::before {
+      background-image: url('../images/bgsvg/avatar.svg');
+    }
+
+    &--economic::before {
+      background-image: url('../images/bgsvg/economic.svg');
+    }
+
+    &--brainstorm::before {
+      background-image: url('../images/bgsvg/brainstorm.svg');
+    }
+
+    &--blank::before {
+      background-image: url('../images/bgsvg/blank.svg');
+    }
+
+    &--papers::before {
+      background-image: url('../images/bgsvg/papers.svg');
+    }
+
+    &--chart::before {
+      background-image: url('../images/bgsvg/chart.svg');
+    }
+  }
+}
+
+
+@media(max-width: 1299px) {
+  .container {
+    max-width: 48rem;
   }
 
-  &::before {
-    position: absolute;
-    display: inline-block;
-    top: 0;
-    left: 0;
-    content: '';
-    width: 2rem;
-    height: 2rem;
-  }
-
-  &--target::before {
-    background-image: url('../images/bgsvg/target.svg');
-  }
-
-  &--balance::before {
-    background-image: url('../images/bgsvg/balance.svg');
-  }
-
-  &--wallet::before {
-    background-image: url('../images/bgsvg/wallet.svg');
-  }
-
-  &--avatar::before {
-    background-image: url('../images/bgsvg/avatar.svg');
-  }
-
-  &--economic::before {
-    background-image: url('../images/bgsvg/economic.svg');
-  }
-
-  &--brainstorm::before {
-    background-image: url('../images/bgsvg/brainstorm.svg');
-  }
-
-  &--blank::before {
-    background-image: url('../images/bgsvg/blank.svg');
-  }
-
-  &--papers::before {
-    background-image: url('../images/bgsvg/papers.svg');
-  }
-
-  &--chart::before {
-    background-image: url('../images/bgsvg/chart.svg');
-  }
+  .key-benefits {
+    padding: 4.375rem 0 5.75rem 0;
   }
 }
 
 // ========================MOBILE MEDIA============================
 
 @media(max-width: 767px) {
+
   .container {
     max-width: 20rem;
   }
 
-.key-benefits {
+  .key-benefits {
 
-  padding: 25rem 0 0 0;
+    padding: 25rem 0 0 0;
 
-  &__block:not(:nth-child(n+4)) {
-    margin-bottom: 4rem;
-  }
+    &__block:not(:nth-child(n+4)) {
+      margin-bottom: 4rem;
+    }
 
-  &__block {
-    margin: 0 auto;
-  }
+    &__block {
+      margin: 0 auto;
+    }
 
-  &__item--papers,
-  &__item--chart {
-    padding-right: 0px;
+    &__item--papers,
+    &__item--chart {
+      padding-right: 0px;
+    }
   }
 }
-}
-
-
-
-
-
-
-
-
-

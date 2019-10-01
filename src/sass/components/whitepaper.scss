@@ -51,6 +51,17 @@
   }
 }
 
+
+@media(max-width: 1299px) {
+  .container {
+    max-width: 48rem;
+  }
+
+  .whitepaper {
+    padding: 4.375rem 0 11.5rem 0;
+  }
+}
+
 // ========================MOBILE MEDIA============================
 
 @media(max-width: 767px) {

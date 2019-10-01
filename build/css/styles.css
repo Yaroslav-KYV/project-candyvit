@@ -453,6 +453,10 @@ body {
   margin: 0 auto;
 }
 
+.nav__cont {
+  display: flex;
+}
+
 .nav__link {
   text-decoration: none;
   color: #000000;
@@ -546,10 +550,10 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  height: 1.125rem;
+  height: 4rem;
   background-color: transparent;
   overflow: hidden;
-  margin-bottom: 0.6875rem;
+  margin-bottom: 3.75rem;
 }
 
 .scale {
@@ -565,7 +569,7 @@ body {
 
 .line-toggle-min {
   display: inline-block;
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 3.125rem;
   transform: translateY(-50%);
@@ -578,15 +582,33 @@ body {
 
 .line-toggle-max {
   display: inline-block;
-  position: absolute;
+  position: relative;
   top: 50%;
-  right: 8.6875rem;
+  left: 24.375rem;
   transform: translateY(-50%);
   width: 1.125rem;
   height: 1.125rem;
   border-radius: 50%;
   cursor: pointer;
   background-color: #ffe633;
+}
+
+.line-toggle-min::after {
+  position: absolute;
+  top: 1.25rem;
+  left: -1.0625rem;
+  content: 'Dec, 17';
+  color: #fff;
+  width: 3.75rem;
+}
+
+.line-toggle-max::after {
+  position: absolute;
+  top: 1.25rem;
+  left: -1.0625rem;
+  content: 'Jan, 17';
+  color: #fff;
+  width: 150px;
 }
 
 .line-toggle-min:hover,
@@ -631,6 +653,7 @@ body {
 }
 
 .right-block {
+  padding: 3.625rem 1.5rem 2.75rem;
   width: 30.0625rem;
   min-height: auto;
   background: linear-gradient(to right, #4b6f9a, #613c90);
@@ -646,7 +669,6 @@ body {
   font-weight: bold;
   text-align: center;
   margin-bottom: 2.25rem;
-  padding-top: 58px;
 }
 
 .right-block__info {
@@ -675,7 +697,6 @@ body {
 .right-block__button {
   display: block;
   margin: 0 auto;
-  margin-bottom: 2.75rem;
   width: 14.6875rem;
   height: 3.75rem;
   border: none;
@@ -699,7 +720,7 @@ body {
 
 .trigger {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   list-style: none;
   margin-bottom: 2.25rem;
 }
@@ -804,7 +825,7 @@ body {
   transform: translateX(-50%);
   display: block;
   background: url(../images/bgsvg/play.svg) center no-repeat;
-  min-width: 16.25rem;
+  width: 16.25rem;
   height: 16.25rem;
   border-radius: 50%;
   content: '';
@@ -1068,9 +1089,19 @@ body {
   color: #fff;
 }
 
+@media (min-width: 768px) {
+  .nav__list {
+    margin-right: 3.75rem;
+  }
+}
+
 @media (max-width: 1299px) {
   .container {
     max-width: 48rem;
+  }
+
+  .about-us {
+    padding: 5.625rem 0 9.5rem 0;
   }
 
   .section__title {
@@ -1094,7 +1125,7 @@ body {
   }
 
   .problem-solutions {
-    padding: 0 0 28rem 0;
+    padding: 70px 0 28rem 0;
   }
 
   .problem {
@@ -1110,6 +1141,22 @@ body {
 
   .solution__button {
     margin: 0 auto;
+  }
+
+  .container {
+    max-width: 48rem;
+  }
+
+  .key-benefits {
+    padding: 4.375rem 0 5.75rem 0;
+  }
+
+  .container {
+    max-width: 48rem;
+  }
+
+  .whitepaper {
+    padding: 4.375rem 0 11.5rem 0;
   }
 }
 
@@ -1134,6 +1181,7 @@ body {
 
   .left-block {
     margin-bottom: 2.5rem;
+    padding: 0 0.3125rem;
   }
 
   .left-block__socials {
@@ -1164,7 +1212,9 @@ body {
 
   .nav__cont {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 
   .logo {
@@ -1200,7 +1250,7 @@ body {
   }
 
   .line-toggle-max {
-    right: 4.6875rem;
+    left: 11.6875rem;
   }
 
   .right-block {
@@ -1213,8 +1263,8 @@ body {
   }
 
   .trigger__item {
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 4rem;
+    height: 4rem;
     color: #ffe633;
   }
 
@@ -1252,7 +1302,7 @@ body {
   }
 
   .problem-solutions {
-    padding-bottom: 0;
+    padding: 7rem 0;
   }
 
   .problem {

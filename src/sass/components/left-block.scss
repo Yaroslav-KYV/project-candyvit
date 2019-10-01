@@ -31,10 +31,10 @@
 .range-control {
   position: relative;
   @include flex('ver');
-  height: 1.125rem;
+  height: 4rem;
   background-color: transparent;
   overflow: hidden;
-  margin-bottom: 0.6875rem;
+  margin-bottom: 3.75rem;
 }
 
 .scale {
@@ -50,7 +50,7 @@
 
 .line-toggle-min {
   display: inline-block;
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 3.125rem;
   transform: translateY(-50%);
@@ -63,9 +63,9 @@
 
 .line-toggle-max {
   display: inline-block;
-  position: absolute;
+  position: relative;
   top: 50%;
-  right: 8.6875rem;
+  left: 24.375rem;
   transform: translateY(-50%);
   width: 1.125rem;
   height: 1.125rem;
@@ -74,10 +74,28 @@
   background-color: $main-color;
 }
 
+.line-toggle-min::after {
+  position: absolute;
+  top: 1.25rem;
+  left: -1.0625rem;
+  content: 'Dec, 17';
+  color: #fff;
+  width: 3.75rem;
+}
+
+.line-toggle-max::after {
+  position: absolute;
+  top: 1.25rem;
+  left: -1.0625rem;
+  content: 'Jan, 17';
+  color: #fff;
+  width: 150px;
+}
+
 .line-toggle-min:hover,
 .line-toggle-max:hover {
-background-color: #fff;
-transition: ease-in-out 1s;
+  background-color: #fff;
+  transition: ease-in-out 1s;
 }
 
 .seasons {
@@ -109,7 +127,8 @@ transition: ease-in-out 1s;
     height: 2rem;
     fill: $main-color;
   }
-  & svg:hover{
+
+  & svg:hover {
     fill: #fff;
 
   }

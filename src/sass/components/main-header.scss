@@ -10,6 +10,16 @@
   max-width: 73.4375rem;
   margin: 0 auto;
 
+  &__cont {
+    display: flex;
+  }
+
+  &__list {
+    @media (min-width: 768px) {
+      margin-right: 3.75rem;
+    }
+  }
+
   &__link {
     text-decoration: none;
     color: $second-color;
