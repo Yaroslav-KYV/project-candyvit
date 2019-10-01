@@ -74,6 +74,12 @@
   background-color: $main-color;
 }
 
+.line-toggle-min:hover,
+.line-toggle-max:hover {
+background-color: #fff;
+transition: ease-in-out 1s;
+}
+
 .seasons {
   @include flex ('between');
   font-size: $font-size;
@@ -102,6 +108,10 @@
     width: 2rem;
     height: 2rem;
     fill: $main-color;
+  }
+  & svg:hover{
+    fill: #fff;
 
   }
+
 }

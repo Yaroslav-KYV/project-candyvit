@@ -11,8 +11,8 @@
     }
 
     &__item {
-      font-size: 14px;
-      margin-bottom: 5px;
+      font-size: 0.875rem;
+      margin-bottom: 0.3125rem;
 
     }
 
@@ -23,7 +23,7 @@
   }
 
   .logo {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
   }
 
   .blocks {
@@ -50,7 +50,7 @@
     }
 
     &__title {
-      font-size: 35px;
+      font-size: 2.1875rem;
     }
   }
 
@@ -64,12 +64,13 @@
   }
 
   .range-control {
-    padding: 0 15px 0 15px;
+    padding: 0 1rem 0 1rem;
   }
 
   .trigger__item {
     width: 4.5rem;
     height: 4.5rem;
+    color: $main-color;
 
   }
 }
@@ -85,7 +86,7 @@
   }
 
   .logo {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     display: flex;
     flex-direction: column;
   }
@@ -95,11 +96,16 @@
   }
 
   .left-block {
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
   }
 
   .left-block__socials {
     justify-content: center;
+}
+
+.trigger__item {
+  color: $main-color;
+
 }
 }
 

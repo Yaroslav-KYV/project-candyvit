@@ -50,6 +50,11 @@
     cursor: pointer;
   }
 
+  &__button:hover {
+    color: #fff;
+    background-color: $button-color;
+  }
+
 }
 
 .text-position {

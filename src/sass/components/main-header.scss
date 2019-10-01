@@ -16,7 +16,9 @@
   }
 
   &__link:hover {
-    color: $button-color;
+    background: linear-gradient(to right, #ffe633, #45769b);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   &__list {
@@ -39,7 +41,13 @@
     cursor: pointer;
   }
 
+  &__item--button:hover {
+    background: linear-gradient(to right, #ffe633, #45769b);
+    transition: ease-in-out 3s;
+  }
+
 }
+
 .blocks {
   max-width: 70.3125rem;
   margin: 0 auto;

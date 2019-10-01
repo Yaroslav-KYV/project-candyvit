@@ -69,8 +69,15 @@
     background: url(../images/bgsvg/play.svg) center no-repeat;
     min-width: 16.25rem;
     height: 16.25rem;
+    border-radius: 50%;
     content: '';
     cursor: pointer;
+
+  }
+
+  &:hover::before {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: ease-in-out 1s;
   }
 }
 
@@ -114,7 +121,7 @@
     padding-left: 0;
 
     &::before {
-      top: -70px;
+      top: -4.375rem;
       left: 50%;
       transform: translateX(-50%)
     }
