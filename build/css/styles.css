@@ -597,7 +597,7 @@ body {
   position: absolute;
   top: 1.25rem;
   left: -1.0625rem;
-  content: 'Dec, 17';
+  content: attr(data-text);
   color: #fff;
   width: 3.75rem;
 }
@@ -606,7 +606,7 @@ body {
   position: absolute;
   top: 1.25rem;
   left: -1.0625rem;
-  content: 'Jan, 17';
+  content: attr(data-text);
   color: #fff;
   width: 150px;
 }
