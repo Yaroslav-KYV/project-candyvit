@@ -1,0 +1,147 @@
+.key-benefits {
+  padding: 0 0 10.125rem 0;
+
+  &__container {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 44.5625rem;
+  }
+
+  &__block {
+    max-width: 19.375rem;
+    height: auto;
+
+    &:not(:nth-child(n+3)) {
+      margin-bottom: 4rem;
+    }
+
+    &--title {
+      list-style: none;
+      padding-left: 1.3125rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+    }
+
+    &:not(:nth-child(n+3)) {
+      margin-bottom: 4rem;
+    }
+
+    &--title {
+      list-style: none;
+      padding-left: 1.3125rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__list {
+    flex-wrap: wrap;
+    list-style: none;
+  }
+
+  &__item {
+    max-width: 19.375rem;
+    position: relative;
+    padding-left: 3.75rem;
+    font-size: 1.125rem;
+    font-weight: regular;
+    margin-bottom: 2.375rem;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    &--papers,
+    &--chart {
+      padding-right: 3.75rem;
+    }
+
+    &::before {
+      position: absolute;
+      display: inline-block;
+      top: 0;
+      left: 0;
+      content: '';
+      width: 2rem;
+      height: 2rem;
+    }
+
+    &--target::before {
+      background-image: url('../images/bgsvg/target.svg');
+    }
+
+    &--balance::before {
+      background-image: url('../images/bgsvg/balance.svg');
+    }
+
+    &--wallet::before {
+      background-image: url('../images/bgsvg/wallet.svg');
+    }
+
+    &--avatar::before {
+      background-image: url('../images/bgsvg/avatar.svg');
+    }
+
+    &--economic::before {
+      background-image: url('../images/bgsvg/economic.svg');
+    }
+
+    &--brainstorm::before {
+      background-image: url('../images/bgsvg/brainstorm.svg');
+    }
+
+    &--blank::before {
+      background-image: url('../images/bgsvg/blank.svg');
+    }
+
+    &--papers::before {
+      background-image: url('../images/bgsvg/papers.svg');
+    }
+
+    &--chart::before {
+      background-image: url('../images/bgsvg/chart.svg');
+    }
+  }
+}
+
+
+@media(max-width: 1299px) {
+  .container {
+    max-width: 48rem;
+  }
+
+  .key-benefits {
+    padding: 4.375rem 0 5.75rem 0;
+  }
+}
+
+// ========================MOBILE MEDIA============================
+
+@media(max-width: 767px) {
+
+  .container {
+    max-width: 20rem;
+  }
+
+  .key-benefits {
+
+    padding: 25rem 0 0 0;
+
+    &__block:not(:nth-child(n+4)) {
+      margin-bottom: 4rem;
+    }
+
+    &__block {
+      margin: 0 auto;
+    }
+
+    &__item--papers,
+    &__item--chart {
+      padding-right: 0px;
+    }
+  }
+}

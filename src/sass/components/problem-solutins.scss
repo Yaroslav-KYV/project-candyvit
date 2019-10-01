@@ -1,0 +1,179 @@
+.problem-solutions {
+  padding: 0 0 13.5rem 0;
+}
+
+.problem {
+  position: relative;
+  left: 11.8125rem;
+  max-width: 41.3125rem;
+  height: 26.75rem;
+  background: linear-gradient(to right, #4d6f9b, #1ba09e);
+  padding: 3.125rem 12.5rem 0 3.75rem;
+  box-shadow: 0px 3px 14.72px 1.28px rgba(0, 0, 0, 0.35);
+
+  &__list {
+    list-style: none;
+  }
+
+  &__title {
+    margin-bottom: 3.125rem;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  &__item {
+    margin-bottom: 2.625rem;
+    color: #fff;
+    position: relative;
+    padding-left: 1.25rem;
+  }
+
+  &__item:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+
+  &__item::before {
+    content: '●';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: #ffe633;
+    text-align: left;
+  }
+}
+
+.solution {
+  z-index: 10;
+  position: absolute;
+  padding: 4.25rem 6.25rem 0 5.25rem;
+  top: 50%;
+  right: -66%;
+  transform: translateY(-50%);
+  max-width: 37.625rem;
+  height: 22rem;
+  box-shadow: 0px 0.1875rem 1rem 0px rgba(0, 0, 0, 0.35);
+  background-color: #fff;
+
+  &__title {
+    margin-bottom: 2.375rem;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: bold;
+  }
+
+  &__description {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.8125rem;
+    margin-bottom: 1.625rem;
+  }
+
+  &__button {
+    display: block;
+    border: none;
+    background-color: $main-color;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 1.25rem;
+    padding: 0.625rem 1.875rem;
+    cursor: pointer;
+  }
+
+  &__button:hover {
+    background-color: $button-color;
+  }
+
+}
+
+// ============================TABLET MEDIA==================================
+
+@media(max-width: 1299px) {
+
+  .container {
+    max-width: 48rem;
+  }
+
+  .problem-solutions {
+    padding: 70px 0 28rem 0;
+  }
+
+  .problem {
+    left: 0;
+    margin: 0 auto;
+  }
+
+  .solution {
+    top: 50%;
+    right: 1.875rem;
+    transform: translateY(50%);
+
+
+    &__button {
+      margin: 0 auto;
+    }
+  }
+}
+
+
+// ========================MOBILE MEDIA============================
+
+@media(max-width: 767px) {
+  .container {
+    max-width: 20rem;
+  }
+
+  .problem-solutions {
+    padding: 7rem 0;
+  }
+
+  .problem {
+    left: 0;
+    margin: 0 auto;
+    padding: 0.625rem 0 0 0;
+    text-align: center;
+
+  &__title {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  &__item {
+    padding-left: 0rem;
+  }
+
+  &__item::before {
+    content: '●';
+    position: absolute;
+    top: -1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffe633;
+    text-align: left;
+  }
+}
+
+  .solution {
+    margin: 0 auto;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(50%);
+    max-width: 90%;
+    height: auto;
+    padding: 0.625rem 0.3125rem;
+
+    &__title {
+      margin-bottom: 2rem;
+    }
+
+    &__description {
+      font-size: 1.25rem;
+    }
+
+    &__button {
+      margin: 0 auto;
+    }
+  }
+}

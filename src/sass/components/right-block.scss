@@ -1,0 +1,100 @@
+.right-block {
+  padding: 3.625rem 1.5rem 2.75rem;
+  width: 30.0625rem;
+  min-height: auto;
+  background: linear-gradient(to right, #4b6f9a, #613c90);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 6px 14.72px 1.28px rgba(0, 0, 0, 0.2);
+
+  &__title {
+    font-size:2.25rem;
+    color: $text-color;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2.25rem;
+  }
+  &__info {
+    font-size: 1.5rem;
+    color: $text-color;
+    font-weight: 400;
+    text-align: center;
+  }
+  &__conv {
+    text-align: center;
+    font-size: 1.875rem;
+    color: $text-color;
+    font-weight: bold;
+    margin-bottom: 0.9375rem;
+  }
+  &__acc {
+    text-align: center;
+    font-size: 1.5rem;
+    color: $text-color;
+    font-weight: normal;
+    margin-bottom: 2.1875rem;
+  }
+  &__button {
+    display: block;
+    margin: 0 auto;
+    width: 14.6875rem;
+    height: 3.75rem;
+    border: none;
+    border-radius: 1.875rem;
+    background-color: $main-color;
+    color: $second-color;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  &__button:hover {
+    color: #fff;
+    background-color: $button-color;
+  }
+
+}
+
+.text-position {
+  margin-bottom: 3.125rem;
+}
+
+.trigger {
+  @include flex ('between');
+  list-style: none;
+  margin-bottom: 2.25rem;
+  &__item {
+    @include center ;
+    background-color: $text-color;
+    width: 5.5rem;
+    height: 5.5rem;
+    font-size: 2.25rem;
+    font-weight: bold;
+  }
+  &__item--ocupation {
+    text-align: center;
+    color: $text-color;
+    font-size:$font-size;
+    padding-top: 0.625rem;
+  }
+
+}
+
+.img-currency {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $text-color;
+  &::before {
+    display: inline-block;
+    margin-bottom: -0.9375rem;
+    width: 1.75rem;
+    height: 2.875rem;
+    content: '';
+    background-image: url('../images/layer.png');
+    margin-right: 5px;
+  }
+}
+

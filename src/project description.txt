@@ -1,0 +1,87 @@
+font
+Signika bold, regular
+
+<<<<<<< HEAD
+!!! variables list  list-style none
+    variables link  text-decoration none
+    mixin background no-repeat center cover
+
+
+
+
+Img
+
+header
+--------------------------------
+header logo png (img)
+header socials-icon svg prite (svg)
+right-block-acc png (bg-image)
+
+main
+------------------------------------
+section-title svg sprite (svg)
+key-benefits icon svg (bg-img)
+whitepaper icon png (img)
+=======
+Img
+header logo png
+header socials-icon svg prite
+header calc png
+section-title svg sprite
+key-benefits icon svg background-image
+whitepaper icon png
+>>>>>>> proj
+
+header
+--------------------
+main-header  (header)
+<<<<<<< HEAD
+main-nav (nav)
+site-logo
+page-nav (ul)
+page-nav__item*7 (li) последняя с page-nav__item--button
+page-nav__link (a)
+
+main
+=======
+nav (nav)
+logo
+nav__list(ul)
+nav__item*7 (li) последняя с nav__item--button
+nav__link (a)
+>>>>>>> proj
+----------------
+left-block (div)
+  left-block__title (h2)
+  left-block__info (p)
+  line-slider (div)
+  left-block__socials (div ?)
+
+<<<<<<< HEAD
+=======
+
+
+left-block (div)
+  left-block__title (h2)
+  left-block__info (p)
+  line-slider (div)
+  left-block__socials (div ?)
+
+>>>>>>> proj
+right-block (div)
+  right-block__title (h3)
+  right-block__info (p)
+  trigger (ul)
+  trigger__item (li)
+  right-block__conv (h4)
+  right-block__acc (p) + span::before-(bg-img)
+  right-bloc__button (button)
+<<<<<<< HEAD
+
+-----------------
+
+
+
+
+=======
+>>>>>>> proj
