@@ -72,6 +72,20 @@
   border-radius: 50%;
   cursor: pointer;
   background-color: $main-color;
+
+  animation-duration: 5s;
+  animation-name: slidein;
+  transition: linear;
+
+  @keyframes slidein {
+    from {
+      margin-left: -70%;
+    }
+
+    to {
+      margin-left: 0%;
+    }
+  }
 }
 
 .line-toggle-min::after {
@@ -92,7 +106,7 @@
   width: 150px;
 }
 
-.line-toggle-min:hover,
+ .line-toggle-min:hover,
 .line-toggle-max:hover {
   background-color: #fff;
   transition: ease-in-out 1s;
@@ -122,15 +136,14 @@
     margin-right: 2.5rem;
   }
 
-  & svg {
+  &__img {
     width: 2rem;
     height: 2rem;
     fill: $main-color;
   }
 
-  & svg:hover {
+  &__img:hover {
     fill: #fff;
-
+    transform: scale(1.3);
   }
-
 }

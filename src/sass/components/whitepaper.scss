@@ -33,6 +33,11 @@
     margin-bottom: 2.125rem;
   }
 
+  &__img:hover {
+    transform: rotate(360deg);
+    transition: ease-in-out 1s;
+  }
+
   &__button {
     padding: 0.5rem 1.875rem;
     box-shadow: 1px 1px 9px 0.08px rgba(0, 0, 0, 0.09);
@@ -44,10 +49,13 @@
     cursor: pointer;
   }
 
-  &__button:hover {
+  &__button:hover,
+  &__button:focus {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    background-color:  $main-color;
+    background-color: $main-color;
     color: #fff;
+    transform: scale(1.1);
+    transition: ease-in-out 1s;
   }
 }
 
