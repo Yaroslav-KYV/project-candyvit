@@ -50,9 +50,12 @@
     cursor: pointer;
   }
 
-  &__button:hover {
+  &__button:hover,
+  &__button:focus {
     color: #fff;
     background-color: $button-color;
+    transform: scale(1.1);
+    transition: ease-in-out 1s;
   }
 
 }

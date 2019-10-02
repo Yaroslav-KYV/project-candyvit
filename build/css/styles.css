@@ -444,6 +444,12 @@ body {
   background-color: #ffff;
 }
 
+.logo:hover,
+.logo:focus {
+  transform: scale(1.1);
+  transition: ease-in-out 1s;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -458,15 +464,66 @@ body {
 }
 
 .nav__link {
+  padding: 0 1.25rem;
   text-decoration: none;
   color: #000000;
+  display: block;
 }
 
-.nav__link:hover {
+.nav__item:nth-child(6) .nav__link {
+  padding-right: 0;
+}
+
+.nav__item:nth-child(1) .nav__link {
+  padding-left: 0;
+}
+
+.nav__link:hover,
+.nav__link:focus {
   background: linear-gradient(to right, #ffe633, #45769b);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-animation: shake 0.8s;
+  animation: shake 0.8s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+@-webkit-keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
 }
 
 .nav__list {
@@ -491,7 +548,8 @@ body {
   cursor: pointer;
 }
 
-.nav__item--button:hover {
+.nav__item--button:hover,
+.nav__item--button:focus {
   background: linear-gradient(to right, #ffe633, #45769b);
   transition: ease-in-out 3s;
 }
@@ -591,13 +649,38 @@ body {
   border-radius: 50%;
   cursor: pointer;
   background-color: #ffe633;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-name: slidein;
+  animation-name: slidein;
+  transition: linear;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    margin-left: -70%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: -70%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
 }
 
 .line-toggle-min::after {
   position: absolute;
   top: 1.25rem;
   left: -1.0625rem;
-  content: 'Dec, 17';
+  content: attr(data-text);
   color: #fff;
   width: 3.75rem;
 }
@@ -606,7 +689,7 @@ body {
   position: absolute;
   top: 1.25rem;
   left: -1.0625rem;
-  content: 'Jan, 17';
+  content: attr(data-text);
   color: #fff;
   width: 150px;
 }
@@ -642,14 +725,15 @@ body {
   margin-right: 2.5rem;
 }
 
-.left-block__socials svg {
+.left-block__socials__img {
   width: 2rem;
   height: 2rem;
   fill: #ffe633;
 }
 
-.left-block__socials svg:hover {
+.left-block__socials__img:hover {
   fill: #fff;
+  transform: scale(1.3);
 }
 
 .right-block {
@@ -709,9 +793,12 @@ body {
   cursor: pointer;
 }
 
-.right-block__button:hover {
+.right-block__button:hover,
+.right-block__button:focus {
   color: #fff;
   background-color: #13a89e;
+  transform: scale(1.1);
+  transition: ease-in-out 1s;
 }
 
 .text-position {
@@ -830,9 +917,11 @@ body {
   border-radius: 50%;
   content: '';
   cursor: pointer;
+  margin: 0 auto;
 }
 
-.img-wrapper:hover::before {
+.img-wrapper:hover::before,
+.img-wrapper:focus::before {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   transition: ease-in-out 1s;
 }
@@ -922,8 +1011,11 @@ body {
   cursor: pointer;
 }
 
-.solution__button:hover {
+.solution__button:hover,
+.solution__button:focus {
   background-color: #13a89e;
+  transform: scale(1.1);
+  transition: ease-in-out 1s;
 }
 
 .key-benefits {
@@ -1072,6 +1164,11 @@ body {
   margin-bottom: 2.125rem;
 }
 
+.whitepaper__img:hover {
+  transform: rotate(360deg);
+  transition: ease-in-out 1s;
+}
+
 .whitepaper__button {
   padding: 0.5rem 1.875rem;
   box-shadow: 1px 1px 9px 0.08px rgba(0, 0, 0, 0.09);
@@ -1083,10 +1180,13 @@ body {
   cursor: pointer;
 }
 
-.whitepaper__button:hover {
+.whitepaper__button:hover,
+.whitepaper__button:focus {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   background-color: #ffe633;
   color: #fff;
+  transform: scale(1.1);
+  transition: ease-in-out 1s;
 }
 
 @media (min-width: 768px) {
@@ -1208,6 +1308,10 @@ body {
   .nav__item {
     font-size: 0.875rem;
     margin-bottom: 0.3125rem;
+  }
+
+  .nav__link {
+    padding: 0;
   }
 
   .nav__cont {
