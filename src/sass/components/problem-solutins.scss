@@ -83,10 +83,10 @@
   }
 
   &__button:hover,
-  &__button:focus {
+  :focus {
     background-color: $button-color;
     transform: scale(1.1);
-    transition: ease-in-out 1s;
+    // transition: ease-in-out 1s;
   }
 
 }
@@ -138,25 +138,25 @@
     padding: 0.625rem 0 0 0;
     text-align: center;
 
-  &__title {
-    margin-bottom: 2rem;
-    text-align: center;
-  }
+    &__title {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
 
-  &__item {
-    padding-left: 0rem;
-  }
+    &__item {
+      padding-left: 0rem;
+    }
 
-  &__item::before {
-    content: '●';
-    position: absolute;
-    top: -1.25rem;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #ffe633;
-    text-align: left;
+    &__item::before {
+      content: '●';
+      position: absolute;
+      top: -1.25rem;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #ffe633;
+      text-align: left;
+    }
   }
-}
 
   .solution {
     margin: 0 auto;
